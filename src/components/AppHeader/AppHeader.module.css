@@ -1,0 +1,15 @@
+.AppHeader {
+    padding: 10px 10px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aqua;
+  }
+  
+  .AppHeader h1 {
+    margin: 0;
+  }
+  header p {
+    font-size: 1.5rem;
+  }
