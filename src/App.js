@@ -54,19 +54,18 @@ function App() {
   return (
     <div className="App">
       <AppHeader title="To-do App" counter={tasks?.length || 0} />
-      <section >
+      <section>
         <h2>Listado Tareas</h2>
         <div className="tasks">
-        {tasks.map((task) => (
-          <Task
-            key={task.id}
-            title={task.title}
-            description={task.description}
-            onDeleteTask={() => deleteTask(task.id)}
-          />
-        ))}
+          {tasks.map((task) => (
+            <Task
+              key={task.id}
+              title={task.title}
+              description={task.description}
+              onDeleteTask={() => deleteTask(task.id)}
+            />
+          ))}
         </div>
-        
       </section>
       <hr />
       <section>
